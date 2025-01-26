@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        header
+        {
+            height: 75px;
+            width: 100%;
+            background-color: teal;
+        }
+        .parent{
+            list-style: none;
+        }
+
+        .sub{
+            list-style: none; position: absolute; display: none;
+        }
+
+        .parent li{
+            float: left;
+            position: relative;
+           
+        }
+       .parent li a{
+        display: block;
+        text-decoration: none;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+        width: 200px;
+        text-align: center;
+        line-height:75px ;
+
+       }
+
+       .parent li:hover a{
+        background-color: black;
+        color: white;
+       }
+
+       .parent li a:hover .sub {
+        display: block;
+       }
+    </style>
+</head>
+<body>
+    <header>
+   <nav>
+    <ul class="parent">
+        <li><a href="">Home</a></li>
+        <li><a href="">Courses</a>
+
+            <ul class="sub">
+                <li><a href="">web dev</li>
+                <li><a href="">app dev</a></li>
+                <li><a href="">GRAPHiCS</a></li>
+            </ul>
+        </li>
+        <li><a href="">Gallery</a></li>
+        <li><a href="">Faclity</a>
+            <ul class="sub">
+                <li><a href="">wifi</a></li>
+                <li><a href="">chair</a></li>
+                <li><a href="">table</a></li>
+            </ul>
+        </li>
+        <li><a href="">Contact</a></li>
+    </ul>
+   </nav>
+    </header>
+    <section>
+
+    </section>
+    <aside>
+
+    </aside>
+    <footer>
+
+    </footer>
+</body>
+</html>
